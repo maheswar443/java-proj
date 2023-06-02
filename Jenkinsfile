@@ -12,7 +12,7 @@ pipeline{
             steps{
 
                 gitCheckout(
-                      branch: "main"
+                      branch: "main",
                       url: "https://github.com/maheswar443/java-proj.git"
                    ) 
                 
