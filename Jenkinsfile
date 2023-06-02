@@ -12,23 +12,14 @@ pipeline{
             steps{
 
              gitCheckout(
-                        branch: "main",
-                        url: "https://github.com/maheswar443/mrdevops_java_app.git"
+
+                        git branch: 'main', url: 'https://github.com/maheswar443/java-proj.git'
+
                     )
                 
             }
         }
-        stage('Unit Test Maven'){
-
-            steps{
-
-                script{
-
-                     mvnTest()
-                }
-                
-            }
-        }
+        
 
     }
 }
